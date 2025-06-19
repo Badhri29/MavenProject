@@ -7,7 +7,6 @@ import java.util.List;
 import org.base.testingmethods.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 public class question1 extends BaseClass{
 
 	public static void main(String[] args) {
@@ -22,21 +21,6 @@ public class question1 extends BaseClass{
 		urlLaunch("http://demo.guru99.com/test/write-xpath-table.html");
 
 		try {
-//			===================================================================================
-
-//			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-//			List<WebElement> elements = wait
-//					.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//table//tr")));
-//			for (WebElement row : elements) {
-//				List<WebElement> elements2 = row.findElements(By.tagName("td"));
-//				for(WebElement data: elements2) {
-//					System.out.print(data.getText() + " ");
-//				}
-//				System.out.println();
-//			}
-			
-			
-//			===================================================================================
 			
 			WebElement table = driver.findElement(By.xpath("//table"));
 			List<WebElement> rows = table.findElements(By.tagName("tr"));
@@ -49,7 +33,6 @@ public class question1 extends BaseClass{
 				System.out.println();
 			}
 			
-//			===================================================================================
 
 		} catch (Exception e) {
 			System.out.println(e);
