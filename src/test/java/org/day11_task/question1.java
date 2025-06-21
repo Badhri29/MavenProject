@@ -17,7 +17,7 @@ public class question1 extends BaseClass{
 		 * NOTE: Print all the content in the dynamic webtable.
 		 */
 		
-		driverLaunch(10,false);
+		driverLaunch("chrome",false);
 		urlLaunch("http://demo.guru99.com/test/write-xpath-table.html");
 
 		try {
