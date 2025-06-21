@@ -61,9 +61,6 @@ public class BaseClass {
 		System.out.println("url launched...");
 	}
 
-	
-	
-	
 	public static void sendKeysWithEnter(By locator, String values) {
 		driver.findElement(locator).sendKeys(values, Keys.ENTER);
 	}
@@ -80,9 +77,6 @@ public class BaseClass {
 		element.sendKeys(values);
 	}
 
-	
-	
-	
 	public static void screenShot() {
 		/*
 		 * no WebElement or locater no path location so it store to default location and
@@ -201,9 +195,6 @@ public class BaseClass {
 		}
 	}
 
-	
-	
-	
 	public static void moveToElement(By locater) {
 		WebElement element = driver.findElement(locater);
 		new Actions(driver).moveToElement(element).perform();
@@ -242,8 +233,6 @@ public class BaseClass {
 		}
 	}
 
-	
-	
 	public static void robotKeyDown(int downTimes, boolean enter) {
 		try {
 
@@ -302,8 +291,6 @@ public class BaseClass {
 		}
 	}
 
-	
-	
 	// copy and paste using locater
 	public static void copy(By copyLocater, By pasteLocater) {
 		try {
@@ -350,9 +337,6 @@ public class BaseClass {
 		}
 	}
 
-	
-	
-	
 	// copy and paste using locater
 	public static void cut(By copyLocater, By pasteLocater) {
 		try {
@@ -399,9 +383,6 @@ public class BaseClass {
 		}
 	}
 
-	
-	
-	
 	public static void selectOption(WebElement element, int index) {
 		Select s = new Select(element);
 		s.selectByIndex(index);
@@ -417,9 +398,6 @@ public class BaseClass {
 		s.selectByVisibleText(visibleText);
 	}
 
-	
-	
-	
 	public static void jsScrollDown(WebElement element) {
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true)", element);
 	}
@@ -428,5 +406,4 @@ public class BaseClass {
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false)", element);
 	}
 
-	
 }
