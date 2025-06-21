@@ -22,7 +22,7 @@ public class question3 extends BaseClass{
 		List<WebElement> elements = driver.findElements(By.xpath("//table//tr"));
 		System.out.println(elements.size());
 		
-		exit("quit");
+		driver.quit();
 		
 	}
 

@@ -27,7 +27,7 @@ public class question2 extends BaseClass {
 		} catch (Exception e) {
 			System.out.println(e);
 		} finally {
-			exit("quit");
+			driver.quit();
 		}
 
 	}
