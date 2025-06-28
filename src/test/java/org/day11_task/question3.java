@@ -16,7 +16,7 @@ public class question3 extends BaseClass{
 		 * NOTE: Find out Number of rows available in webPage
 		 */
 		
-		driverLaunch("chrome",false);
+		driverLaunch("chrome",false, 5);
 		urlLaunch("http://demo.guru99.com/test/write-xpath-table.html");
 		
 		List<WebElement> elements = driver.findElements(By.xpath("//table//tr"));

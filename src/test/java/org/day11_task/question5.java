@@ -16,7 +16,7 @@ public class question5 extends BaseClass{
 		 * NOTE: Print Even rows available in 4th webtable
 		 */
 		
-		driverLaunch("chrome",false);
+		driverLaunch("chrome",false, 5);
 		urlLaunch("http://demo.guru99.com/test/write-xpath-table.html");
 		
 		try {

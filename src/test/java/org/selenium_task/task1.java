@@ -7,7 +7,7 @@ public class task1 extends BaseClass {
 
 	public static void main(String[] args) {
 
-		driverLaunch("chrome", true);
+		driverLaunch("chrome", true, 5);
 		urlLaunch("https://demo.automationtesting.in/Register.html");
 
 		registration reg = new registration();
