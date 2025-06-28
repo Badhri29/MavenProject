@@ -7,7 +7,7 @@ public class Task2 extends BaseClass {
 	private static void simpleMethod(String url) {
 
 
-		driverLaunch("chrome", false);
+		driverLaunch("chrome", false, 5);
 		urlLaunch(url);
 
 

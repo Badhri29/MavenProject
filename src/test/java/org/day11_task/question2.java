@@ -16,7 +16,7 @@ public class question2 extends BaseClass {
 		 * NOTE: Print all value in first row
 		 */
 
-		driverLaunch("chrome",false);
+		driverLaunch("chrome",false, 5);
 		urlLaunch("http://demo.guru99.com/test/write-xpath-table.html");
 
 		try {
